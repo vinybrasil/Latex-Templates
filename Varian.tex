@@ -1,0 +1,149 @@
+%===========================================NAO MEXE DAQUI PRA BAIXO=========================================================================================
+\documentclass[oneside,12pt, letterpaper]{book}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry} 
+\usepackage{setspace}
+\usepackage{helvet}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+
+\usepackage{subfig}
+\graphicspath{ {./images/}}
+%\renewcommand{\familydefault}{\sfdefault}
+%duas linhas pra colocar no arial
+\title{Teoria do Equil{\'i}brio Geral: fichamento do cap{\i}tulo 31 do Varian}
+\date{\today}
+\author {Vin{\' i}cyus A. Brasil}
+% \geometry{textwidth=6in, textheight=9in, top=30mm, bottom=25mm}
+\pagestyle{myheadings}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage[ansinew]{inputenc}
+\usepackage[brazilian]{babel}
+% \usepackage{graphicx}
+\linespread{1.5} 
+% horizontal
+\setlength{\hoffset}{-1in}
+\setlength{\oddsidemargin}{3.0cm} 
+\setlength{\textwidth}{160mm} % (210mm - 30mm - 20mm)
+\setlength{\parindent}{1.25cm} % identa��o de cada par�grafo
+% vertical
+\setlength{\voffset}{-1in}
+\addtolength{\voffset}{2.0cm}
+\setlength{\topmargin}{0.0cm}
+
+\setlength{\headheight}{5mm}
+\setlength{\headsep}{5mm}
+\setlength{\textheight}{210mm} % (297mm - 30mm - 20mm)
+
+%===========================================NAO MEXE DAQUI PRA CIMA=========================================================================================
+
+\begin{document}
+
+\maketitle
+\chapter*{Resumo}
+\addcontentsline{toc}{chapter}{Resumo}
+
+\thispagestyle{myheadings}
+O equil{\'i}brio geral se refere as estudo de como a economia pode ajustar-se para igualar a oferta e a demanda em todos os mercados ao mesmo tempo. A caixa de 
+Edgeworth {\'e} uma ferramenta gr{\'a}fica para examinar esse equil{\'i}brio geral como dois consumidores e dois bens. Uma aloca{\c c}{\~a}o eficiente no sentido de
+Pareto {\'e} aquela em que n{\~a}o h{\'a} realoca{\c c}{\~a}o vi{\'a}vel dos bens capaz de fazer com que todos os consumidores fiquem ao menos t{\~a}o bem e pelo menos
+um deles fique estritamente melhor. A lei de Walras afirma que o valor da demanda excente agregada {\'e} zero para todos os pre{\c c}os. Uma aloca{\c c}{\~a}o de 
+equil{\'i}brio {\'e} aquela em que cada agente escolhe a cesta mais preferida de bens a partir do conjunto de bens que ele pode pagar. Em um sistema de equilibrio geral so
+sao determinados os pre{\c c}os relativos. Se a demanda por cada bem variar continuamente {\`a} medida que os pre{\c c}os varia , haver{\'a} sempre um conjunto de pre{\c c}os em que a 
+demanda se iguala {\`a} oferta em cada mercado, ou seja, um equil{\'i}brio competitivo. O Primeiro Teorema da teoria da Teoria Econ{\^o}mica de Bem-Estar afirma que o equil{\'i}brio competitivo {\'e} eficiente
+no sentido de Pareto e o Segundo Teorema da teoria da Teoria Econ{\^o}mica de Bem-Estar  afirma que, desde que as prefer{\^e}ncias sejam convexas, todas aloca{\c c}{\~a}o eficiente no sentido de Pareto pode ser 
+sustentada como um equil{\'i}brio competitivo
+\newpage
+
+\chapter{Proleg{\^ o}menos} 
+\label{direta}
+
+	Inicialmente, deve-se revisar alguns conceitos chaves para que se possa entender a Teoria do Equil{\'i}brio Geral. Espera-se que o leitor esteja familiarizado 
+	com conceitos b{\' a}sicos de microeconomia, como, por exemplo, curvas de indiferen{\c c}a e esstruturas de mercado. 
+\section{TMS(ou MSR)}
+Supondo o bem $ x_1 $ no eixo horizontal e o bem eixo $ x_2 $ na vertical, a taxa marginal de substitui{\c c}{\~ a}o (abreviado como TMS ou MSR, do ingl{\^e}s,\textit{ marginal substitution rate})  mede a inclina{\c c}{\~ a}o da curva 
+de indiferen{\c c}a. O resultado ser{\' a} igual ao quanto o consumidor troca, em n{\' i}veis infinitesimais, do bem $ x_1 $ e recebe de $ x_2 $ para continuar com a mesma utilidade (ou vice-versa).
+O mesmo resultado pode ser alcan{\c c}ado pela equa{\c c}{\~ a}o: 
+\[ TMS =  \frac{\Delta x_2}{\Delta x_1} = - \frac{UM_1}{UM_2}, \] sendo $ UM_1 $ a utilidade marginal do bem 1 e $ UM_2 $ a utilidade marginal do bem 2.
+\section{Efici{\^e}ncia de Pareto}
+Uma aloca{\c c}{\~ a}o {\'e} dita eficiente no sentido de Pareto se:
+\begin{enumerate}
+\item N{\~ a}o h{\'a} como fazer com que todas as pessoas melhores; ou
+\item N{\~ a}o h{\'a} como melhorar a situa{\c c}ao de uma pessoa sem piorar a de outra; ou
+\item Todos os ganhos de troca se exauriram; ou
+\item N{\~a} h{\'a} trocas mutualmente vantajosas para serem efetuadas; 
+\end{enumerate}
+
+\section{Demanda bruta e l{\'i}quida}
+A demanda bruta do consumidor A pelo bem 1 {\'e} o quanto ele deseja consumir do bem e {\'e} denotada por $ x^1_a $. J{\' a} a demanda l{\' i}quida {\' e} a diferen{\c c}a entre
+a demanda bruta e a dota{\c c}{\~a}o inicial, sendo ent{\~a}o a quantidade que ele vai comprar ou vender do bem. Temos, ent{\~a}o, que:
+\[e^1_A = x^1_A - \omega^1_A \] onde, se $e^1_A > 0$, o consumidor comprar{\'a} o bem 1 e, se $e^1_A < 0$, o consumidor vende o bem 1.
+\section{Aloca{\c c}{\~a}o fact{\'i}vel}
+Uma aloca{\c c}{\~a}o {\'e} dita fact{\'i}vel se a quantidade total de bens consumidos for igual ao total dispon{\'i}vel: \[x^1_A + x^2_B = \omega^1_A + \omega^1_B \] \[x^2_A + x^2_B = \omega^2_A + \omega^2_B \]
+\chapter{Troca pura}
+Este cap{\'i}tulo {\'e} dedicado a apresentar o modelo mais simples poss{\'i}vel da teoria.
+\section{Hip{\'o}teses}
+Assume-se aqui um mercado competitivo, com dois agentes $(A$  e  $ B)$ e dois bens $(1 e 2)$. N{\~a}o h{\'a} produ{\c c}{\~a}o e os agentes buscam maximizar sua utilidade.
+
+\section{A caixa de Edgeworth}
+A caixa de Edgeworth {\'e} um recurso visual do que {\'e} matematizado no modelo. A soma da quantidade dispon{\'i}vel do bem 1 {\'e} o comprimento do eixo
+horizontal e a soma da quantidade do bem 2 define a altura da caixa. {\'E} considerado a origem da caixa para o consumidor A o canto inferior esquerdo e 
+para o consumidor B a origem est{\'a} no canto superior direito. 
+
+
+
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.4]{img1}
+%\caption {A caixa de Edgeworth}
+%\end{figure}
+\section{Pre{\c c}os relativos e o equil{\'i}brio}
+A reta or{\c c}ament{\'a}ria tem como inclina{\c c}{\~a}o $ - \frac{p_1}{p_2} $ e tangencia as curvas de indiferen{\c c}a. H{\'a}, no caso da figura 2, demanda l{\'i}quida 
+diferente de zero. 
+
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.4]{img3}
+%\caption {Uma aloca{\c c}{\~a}o poss{\'i}vel diagramada na caixa de Edgeworth. Note que a demanda liqu{\'i}da {\' e} diferente de zero.}
+%\end{figure}
+%pq as figura tao indo pro inicio da pagina?
+
+Neste caso, com estes $p_1$ e $p_2$, haver{\'a} demanda l{\'i}quida diferente de zero, ou seja, h{\'a} trocas que podem ser feitas se os pre{\c c}os mudarem. 
+Definindo a demanda l{\'i}quida excedente $ z_1$ como a soma das demandas l{\'i}quidas do bem $1$ pelos agentes $A$ e $B$ (e fazendo o mesmo para 
+o bem 2), temos que: \[z_1(p_1,p_2) = e^1_A (p_1, p_2) + e^1_B (p_1,p_2) \] 
+\[z_2(p_1,p_2) = e^2_A (p_1, p_2) + e^2_B (p_1,p_2) \]
+O equil{\'i}brio {\'e} definido quando h{\'a} dois pre{\c c}os, ($p^*_1, p^*_2) $, que satisfazem \[z_1(p^*_1, p^*_2) = 0 \] \[z_2(p^*_1, p^*_2) = 0 \]  
+Nesse caso, a $TMS$ das duas curvas de indifiren{\c c}a {\'e} ser{\'a} igual  a $ - \frac{p_1}{p_2}. $ Aqui, n{\~a}o h{\'a} mais trocas eficientes no sentido de Pareto.
+
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.4]{img4}
+%\caption {Equil{\'i}brio na caixa de Edgeworth}
+%\end{figure}
+O resultado da demanda l{\'i}quida ser igual {\`a} zero adv{\'e}m da Lei de Walras, que diz que o valor da demanda excendente agregada {\'e} id{\^e}ntico {\`a} zero para quaisquer 
+par de pre{\c c}os, ou seja  \[p_1 z_1 (p_1, p_2) + p_2 z_2 (p_1, p_2) \equiv 0 \]
+Como pode-se ter um par de pre{\c c}os que faz com que $z_1 = 0 $ e $p_2 > 0$, tem-se tamb{\'e}m que $z_2 = 0 $. A implica{\c c}{\~a}o disso {\'e} que, em um mercado
+de $k$ bens, necessita-se apenas encontrar pre{\c c}os que equilibrem $k - 1$ mercados, fazendo com que o $k-{\'e}simo$ mercados seja equilibrado pela oferta e demanda. 
+Isso acontece pois a renda do consumidor no modelo de Equil{\'i}brio geral {\'e} sua dota{\c c}{\~a}o a pre{\c c}os de mercado. A quest{\~a} que fica {\'e} se existe tal conjunto de pre{\c c}os.
+
+\chapter{Teoremas do Bem-Estar}
+\section{Pressupostos}
+N{\~a}o necessariamente ter $k - 1$ pre{\c c}os relativos e $k$ bens (gerando $k - 1$ equa{\c c}oes de equilibrio) {\'e} s{\~a} as {\'u}nicas exig{\^e}ncias para provar a exist{\^e}ncia do equil{\'i}brio. Outra exig{\^e}ncia {\'e} que a 
+fun{\c c}{\~ a}o demanda excedente agregada seja uma fun{\c c}{\~a}o cont{\'i}nua, ou seja, grosso modo, significa que pequenas mudan{\c c}as nos pre{\c c}os deveriam resultar
+em pequenas varia{\c c}{\~o}es na demanda agregada, n{\~a}o grandes saltos. Al{\'e}m desse, h{\'a} o pressuposto que os agentes se importam apenas com o seu consumo, ou seja, n{\~a}o
+h{\'a} externalidades no consumo. Outro importante pressuposto {\'e} que os agentes se comportem de maneira competitiva, ou seja, tomam o pre{\c c}o como dado e maximizam sua utilidade.
+
+\section{Primeiro Teorema do Bem-Estar}
+O primeiro teorema do bem-estar diz que qualquer equil{\'i}brio competitivo {\'e} eficiente no sentido de Pareto.  Logo, um mercado privado em que cada agente procura maximizar sua utilidade
+resultar{\'a} numa aloca{\c c}{\~a}o eficiente (esgota os ganhos de troca). A {\'u}nica cois que os agentes precisam saber s{\~a}o os pre{\c c}os, sendo que esta caracter{\'i}stica constitui forte 
+argumento a favor do seu uso como meio de alocar recursos. A aloca{\c c}{\~a}o {\'e} eficiente mas n{\~a}o necessariamente atente outros requisitos desej{\'a}veis como, por exemplo, ser justa. 
+
+\section{Segundo Teorema do Bem-Estar}
+O segundo teorema do bem-estar diz que, se todos os agentes tiverem prefer{\^e}ncias convexas, haver{\'a} sempre um conjunto de pre{\c c}os tal que cada aloca{\c c}{\~a}o eficiente no sentido
+de Pareto seja um equil{\'i}brio de mercado para uma distribui{\c c}{\~a}o apropriada de dota{\c c}{\~o}es, ou seja, toda aloca{\c c}{\~a}o eficiente no sentido de Pareto pode ser alcan{\c c}ada como um 
+equil{\'i}brio competitivo. Ent{\~a}, pode-se redistribuir as dota{\c c}{\~o}es de bens para avaliar a riqueza dos agentes e usar os pre{\c c}os para medir a escassez relativa, sendo implica{\c c}{\~a}o direta 
+do teorema que problemas de distribui{\c c}{\~a}o e efici{\^e}ncia podem ser separados.  
+
+\end{document}
