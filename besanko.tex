@@ -1,0 +1,111 @@
+%===========================================NAO MEXER DAQUI PRA BAIXO=========================================================================================
+\documentclass[oneside,12pt, letterpaper]{book}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts} 
+\usepackage{geometry} 
+\usepackage{setspace}
+\usepackage{helvet}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{subfig}
+\graphicspath{ {./images/}}
+%\renewcommand{\familydefault}{\sfdefault}
+%duas linhas pra colocar no arial
+\title{Teoria do equil{\'i}brio geral: resumo do cap{\'i}tulo 16 do livro do Besanko}
+\date{\today}
+\author {Vin{\' i}cyus A. Brasil}
+% \geometry{textwidth=6in, textheight=9in, top=30mm, bottom=25mm}
+\pagestyle{myheadings}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage[ansinew]{inputenc}
+\usepackage[brazilian]{babel}
+% \usepackage{graphicx}
+\linespread{1.5} 
+% horizontal
+\setlength{\hoffset}{-1in}
+\setlength{\oddsidemargin}{3.0cm} 
+\setlength{\textwidth}{160mm} % (210mm - 30mm - 20mm)
+\setlength{\parindent}{1.25cm} % identa��o de cada par�grafo
+% vertical
+\setlength{\voffset}{-1in}
+\addtolength{\voffset}{2.0cm}
+\setlength{\topmargin}{0.0cm}
+
+\setlength{\headheight}{5mm}
+\setlength{\headsep}{5mm}
+\setlength{\textheight}{210mm} % (297mm - 30mm - 20mm)
+
+%===========================================NAO MEXER DAQUI PRA CIMA=========================================================================================
+
+\begin{document}
+
+\maketitle
+\date{}
+
+\chapter{Defini{\c c}{\~a}o} 
+\section{Equil{\'i}brio geral x equil{\'i}brio parcial}
+A teoria do equil{\'i}brio parcial, normalmente abordada nas aulas de microeconomia, trata-se, em linhas gerais, do estudo da determina{\c c}{\~a}o de um 
+pre{\c c}o espec{\'i}fico com todos os outros pre{\c c}os constantes. A teoria do equil{\'i}brio geral, busca, por sua vez, entender a determina{\c c}{\~a}o de v{\'a}rios pre{\c c}os 
+simultaneamente. 
+
+\section{Exemplo num{\'e}rico}
+Suponha uma economia com dois produtos: caf{'e} e ch{'a}. Os dois produtos s{~a}o substitutos, ou seja, quando o pre{o de um bem aumenta, o pre{o do outro tamb{'e}m vai
+aumentar, devido ao aumento no quantidade demandada. Suponha as seguintes equa{\c c}{~o}es de oferta e demanda para os dois bens, sendo C o caf{\'e} e T o ch{\'a}: 
+\newline $ \begin{cases} Q^d_C = 120 - 50P_C + 40P_T \\ Q^d_T = 80 - 75P_T + 20P_C \\ Q^s_C = 80 + 20P_C \\ Q^s_T = 45 + 10P_T  \end{cases}   $
+
+\chapter{Modelo simples de uma economia}
+Suponha dois tipos de fam{\'i}lias: a de trabalhadores de escrit{'o}rio e a de oper{'a}rios. Cada tipo de fam{\'i}lia consome dois bens: energia e alimentos, sendo que
+cada um deles {\'e} produzido com dois insumos: trabalho e capital. As fam{\'i}lias demandam energia e alimentos e ofertam trabalho e capital(ao alugarem
+terras {\''a}s empresas, por exemplo. As empresas demandam capital e trabalho e ofertam energia e alimentos. Uma ilustra{{~a}o pode clarificar a ideia:
+%FIGURA1
+\section{Demanda das fam{\'i}lias: maximiza{\c c}{\~a}o de sua utilidade} 
+Denotando a quantidade de energia consumida por $x$,a quantidade de alimentos consumida por $y$, as fam{\'i}lias de trabalhadores de escrit{\'o}rio por $W$ e dos
+oper{\'a}rios por $B$. A utilidade delas {\'e} denotada por $U_W(x,y)$ e $U_B(x,y)$ e estamos supondo que as fam{\'i}lias de operários sejam as principais ofertantes de
+trabalho e as de escrit{\'o}rio sejam as principais ofertantes de capital. Nesta economia, h{\'a} mais oferta de trabalho que de capital, ou seja, a oferta agregada de
+trabalho {\'e} maior que a oferta agregada de capital. O pre{\c c}o recebido por uma unidade de trabalho {\'e} $w$ e e o pre{\c c}o recebido por uma unidade de capital é $r$,
+tendo que a renda das fam{\'i}lias, $I_B$ e $I_W$, depende dos dois fatores. Sendo o pre{\c c}o da unidade de energia $P_x$ e o pre{\c c}o de uma unidade de alimento $P_y$, cada
+fam{\'i}lia toma os pre{\c c}os como dados e enfrenta o seguinte problema de maximiza{\c c}{\~a}o: \[ \text{max }U^W_{x,y}  \text{, sujeito {\`a}: }P_xx + P_yy = I_W(w,r)  \]
+\[ \text{max }U^B_{x,y}  \text{, sujeito {\`a}: }P_xx + P_yy = I_B(w,r)  \] 
+Tais fam{\'i}lias v{\~a}o maximizar a utilidade quando: 
+\[ TMS^W_{x,y} = \frac{P_x}{P_y} \text{   e   } TMS^B_{x,y} = \frac{P_x}{P_y} \]
+Pode-se, tamb{\'e}m, somar horizontalmente as demandas individuais de cada fam{\'i}lia e gerar a fun{\c c}{\~a}o de demanda agregada, como mostra a figura. Uma mudan{\c c}a no pre{\c c}o
+do bem y deslocaria tais fun{\c c}{\~o}es. 
+%FIGURA2
+\section{Demanda das empresas: minimiza{\c c}{\~a}o de seus custos}
+Nesta economia, algumas empresas produzem energia e outras produzem alimentos em mercados com concorr{\^e}ncia perfeita. Os retornos de escala s{\~a}o constantes (ao
+duplicar os insumos, se duplica a produ{\c c}{\~a}o) e cada produtor individual de energia tem uma fun{\c c}{\~a}o  de produ{\c c}{\~a}o $x = f(l, k)$ e os de alimento $y = g(l, k)$, sendo $l$ e $k$ as quantidades individuais	
+que cada produtor usa e $L$ e $K$ as quantidades agregadas de capital e trabalho no mercado. Logo, os produtores tem o seguinte problema de minimiza{\c c}{\~a}o:
+\[ \text{min }wl+rk  \text{, sujeito {\`a}: }x=f(l,k)  \]
+\[ \text{min }wl+rk  \text{, sujeito {\`a}: }y=g(l,k)  \]
+O custo {\'e} minimizado quando: \[ TMST^x_{l,k} = \frac{w}{r} \text{   e   } TMST^y_{l,k} = \frac{w}{r} \]
+Pode-se tamb{\'e}m agregar a demanda por capital e trabalho das empresas, somando-as horizontalmente: 
+%FIGURA3
+\section{Oferta das empresas: maximização dos lucros} 
+Como assumimos competição perfeita, temos que todos os produtores tem a mesma tecnologia e a curva de custo marginal é uma constante, dependendo de $w$ e $r$. 
+Como a função de produção de $x$ difere de $y$, as curva de $CM_x$ e $CM_y$ diferem também, dado que dependem de maneira diferente de $w$ e $r$. Como se
+está com concorrência perfeita, os produtores agem como tomadores de preço e a oferta é igual ao custo marginal, além de ser igual ao preço de equilíbrio(ainda não 
+pode-se afirmar isso, mas será feito no decorrer do artigo). 
+Como os retornos de escala são constantes, o custo médio e o custo marginal são iguais, o que garante lucro zero aos produtores. $CM_x$ e $CM_y$ dependem de
+$w$ e $r$, que dependem da oferta e demanda do mercado de insumos, o que mostra que os mercaodos são interdependentes.
+%FIGURA4
+\section{Oferta das famílias: maximização dos seus lucros}
+Trabalho e capital são ofertados pelas famílias, que ofertam uma quantidade fixa e são indiferentes a qual mercado ofertar desde que o pagamento($r$ ou $w$) seja 
+igual nos dois mercados e maior que zero. Como a quantidade é fixa, as curvas de oferta $S_L$ e $S_K$ são retas verticais, lembrando que os operários ofertam trabalho
+e as famílias de escritório ofertam capital. 
+%FIGURA5
+\section{Análise de equilíbrio geral}
+Quando todas essas partes interagem, quatro preços serão determinados ao mesmo tempo: $P_x$, para a energia; $P_y$, para os alimentos; $w$ pelos serviços do 
+trabalho e $r$ pelos serviços do capital, Todos são interdependentes: o preço da energia é determinado pelo custo marginal da energia, mas esse depende dos 
+preços do trabalho e do capital. Os preços que equilibram os mercados são tais que: a demanda familiar de energia é igual à oferta de mercado de energia, 
+a demanda familiar de alimentos é igual à oferta de mercado de alimentos, a demanda de mercado de trabalho é igual à oferta familiar de trabalho e a demanda de mercado
+de capital é igual à oferta familiar de capital. Um obervação a ser feita é que, como a quantidade de capital é menor, esse é melhor remunerado, deixando as 
+famílias de trabalhadores de escritório com maior renda que as famílias de operários. 
+%FIGURA6
+\section{Lei de Walras}
+Ao tentar resolver o sistema 
+
+
+
+\end{document}
